@@ -1,6 +1,10 @@
 # test-fe-salt
 Technical Test FE Salt.id
 
+# Cara Run
+1. untuk mode development : 'npm run dev' atau 'yarn dev'
+2. untuk mode Production : 'npm run start' atau 'yarn start'
+
 # Referensi API
 Source : http://api.tvmaze.com
 
