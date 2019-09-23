@@ -5,6 +5,8 @@ Technical Test FE Salt.id
 1. untuk mode development : 'npm run dev' atau 'yarn dev'
 2. untuk mode Production : 'npm run start' atau 'yarn start'
 
+* untuk lebih aman biasanya di 'yarn install' terlebih dahulu
+
 # Referensi API
 Source : http://api.tvmaze.com
 
