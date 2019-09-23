@@ -8,21 +8,19 @@ const Wrapper = styled.section`
   padding: 2rem 0;
 `
 
-class VideosActivity extends React.Component {
-  render() {
-    return (
-      <Wrapper>
-        <Container>
-          <Row>
-            <Col md="8">
-              <MainVideosView title="Videos" subtitle="Browse All Videos" moreIcon="cloud_upload" moreLabel="Upload Your Own Videos" />
-            </Col>
-            <ActivityView />
-          </Row>
-        </Container>
-      </Wrapper>
-    )
-  }
+const VideosActivity = () => {
+  return (
+    <Wrapper>
+      <Container>
+        <Row>
+          <Col md="8">
+            <MainVideosView title="Videos" subtitle="Browse All Videos" moreIcon="cloud_upload" moreLabel="Upload Your Own Videos" />
+          </Col>
+          <ActivityView />
+        </Row>
+      </Container>
+    </Wrapper>
+  )
 }
 
 export default VideosActivity

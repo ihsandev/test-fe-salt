@@ -14,13 +14,12 @@ const aliases = {
 
 module.exports = withCSS(withImages({
   useFileSystemPublicRoutes: false,
-  inlineImageLimit: 16384,
   alias: aliases,
   webpack: config => {
     // resolve path
     config.resolve = {
       ...config.resolve,
-      extensions: [...config.resolve.extensions, ".scss", ".css", ".mdx", "jsx"],
+      extensions: [...config.resolve.extensions, ".scss", ".css", ".mdx", "jsx", "js"],
       alias: { ...config.resolve.alias, ...aliases }
     }
 
@@ -45,10 +44,10 @@ module.exports = withCSS(withImages({
     }
 
     // Read the .env file
-    new Dotenv({
-      path: path.join(__dirname, '.env'),
-      systemvars: true
-    })
+    // new Dotenv({
+    //   path: path.join(__dirname, '.env'),
+    //   systemvars: true
+    // })
 
     return config
   }
