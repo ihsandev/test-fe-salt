@@ -1453,27 +1453,17 @@ class MainChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('https://api.tvmaze.com/search/shows?q=batman');
+    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`http://api.tvmaze.com/shows/1/cast`);
     urlFetch.then(res => {
       if (res.status === 200) {
         return res.json();
       }
     }).then(resJson => {
-      const datum = resJson.map(item => item.show);
+      const datum = resJson.map(item => item.person);
       this.setState({
         channel: datum
       });
-    }); // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
-    // urlFetch.then(res => {
-    //   if (res.status === 200) {
-    //     return res.json()
-    //   }
-    // }).then(resJson => {
-    //   const datum = resJson.map(item => item.person)
-    //   this.setState({
-    //     channel: datum
-    //   })
-    // })
+    });
   }
 
   render() {
@@ -1484,7 +1474,7 @@ class MainChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     }, __jsx(Grid, null, this.state.channel.splice(0, 5).map((item, i) => {
       return __jsx(Components__WEBPACK_IMPORTED_MODULE_3__["VideosNews"], {
         title: item.name,
-        name: item.genres,
+        name: item.country.name,
         key: i,
         classname: i === 0 ? 'item item1' : 'item',
         image: item.image.original

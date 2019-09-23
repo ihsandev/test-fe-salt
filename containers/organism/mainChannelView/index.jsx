@@ -84,30 +84,18 @@ class MainChannelView extends Component {
     }
   }
   componentDidMount() {
-    const urlFetch = fetch('https://api.tvmaze.com/search/shows?q=batman')
+    const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
 
     urlFetch.then(res => {
       if (res.status === 200) {
         return res.json()
       }
     }).then(resJson => {
-      const datum = resJson.map(item => item.show)
+      const datum = resJson.map(item => item.person)
       this.setState({
         channel: datum
       })
     })
-    // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
-
-    // urlFetch.then(res => {
-    //   if (res.status === 200) {
-    //     return res.json()
-    //   }
-    // }).then(resJson => {
-    //   const datum = resJson.map(item => item.person)
-    //   this.setState({
-    //     channel: datum
-    //   })
-    // })
   }
 
   render() {
@@ -127,7 +115,7 @@ class MainChannelView extends Component {
               {
                 this.state.channel.splice(0, 5).map((item, i) => {
                   return (
-                    <VideosNews title={item.name} name={item.genres} key={i} classname={i === 0 ? 'item item1' : 'item'} image={item.image.original} />
+                    <VideosNews title={item.name} name={item.country.name} key={i} classname={i === 0 ? 'item item1' : 'item'} image={item.image.original} />
                   )
                 })
               }

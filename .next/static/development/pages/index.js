@@ -1406,30 +1406,20 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()('https://api.tvmaze.com/search/shows?q=batman');
+      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()("http://api.tvmaze.com/shows/1/cast");
       urlFetch.then(function (res) {
         if (res.status === 200) {
           return res.json();
         }
       }).then(function (resJson) {
         var datum = resJson.map(function (item) {
-          return item.show;
+          return item.person;
         });
 
         _this2.setState({
           channel: datum
         });
-      }); // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
-      // urlFetch.then(res => {
-      //   if (res.status === 200) {
-      //     return res.json()
-      //   }
-      // }).then(resJson => {
-      //   const datum = resJson.map(item => item.person)
-      //   this.setState({
-      //     channel: datum
-      //   })
-      // })
+      });
     }
   }, {
     key: "render",
@@ -1441,7 +1431,7 @@ function (_Component) {
       }, __jsx(Grid, null, this.state.channel.splice(0, 5).map(function (item, i) {
         return __jsx(Components__WEBPACK_IMPORTED_MODULE_9__["VideosNews"], {
           title: item.name,
-          name: item.genres,
+          name: item.country.name,
           key: i,
           classname: i === 0 ? 'item item1' : 'item',
           image: item.image.original
