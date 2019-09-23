@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import styled from 'styled-components'
 import { MainVideosView, ActivityView } from 'Containers'
@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   padding: 2rem 0;
 `
 
-class VideosActivity extends Component {
+class VideosActivity extends React.Component {
   render() {
     return (
       <Wrapper>

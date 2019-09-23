@@ -1,4 +1,4 @@
 const routes = require('next-routes')
 
 module.exports = routes()                           // ----   ----      -----
-  .add({ name: "home", pattern: "/", page: "/Home" })
+  .add({ name: "home", pattern: "/", page: "/" })

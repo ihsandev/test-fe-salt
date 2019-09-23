@@ -1,10 +1,23 @@
 const next = require('next')
+const dev = process.env.NODE_ENV !== 'production'
+const PORT = process.env.NODE_ENV === 'production' ? 2026 : 2027
+
+const app = next({ dir: '.', dev })
+
+// routing
 const routes = require('./config/routes')
-const app = next({ dev: process.env.NODE_ENV !== 'production' })
 const handler = routes.getRequestHandler(app)
 
 // With express
 const express = require('express')
 app.prepare().then(() => {
-  express().use(handler).listen(3000)
+  const server = express()
+
+  server.use(handler)
+
+  server.listen(PORT, err => {
+    if (err) throw err
+    console.log(`> Ready on http://localhost:${PORT}`)
+  })
+
 })

@@ -2,7 +2,7 @@ const withCSS = require("@zeit/next-css");
 require('dotenv').config()
 const path = require('path')
 const Dotenv = require('dotenv-webpack')
-
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 const withImages = require('next-images')
 
 const aliases = {
@@ -20,8 +20,28 @@ module.exports = withCSS(withImages({
     // resolve path
     config.resolve = {
       ...config.resolve,
-      extensions: [...config.resolve.extensions, ".scss", ".css", ".mdx"],
+      extensions: [...config.resolve.extensions, ".scss", ".css", ".mdx", "js", "jsx"],
       alias: { ...config.resolve.alias, ...aliases }
+    }
+
+    config.node = {
+      ...config.node,
+      fs: "empty"
+    }
+
+    config.module.rules.push({
+      test: /.*\.(otf|eot|woff|woff2|ttf|md)$/i,
+      use: [
+        {
+          loader: "url-loader"
+        }
+      ]
+    })
+
+    if (config.mode === "production") {
+      if (Array.isArray(config.optimization.minimizer)) {
+        config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}))
+      }
     }
 
     // Read the .env file
@@ -29,6 +49,7 @@ module.exports = withCSS(withImages({
       path: path.join(__dirname, '.env'),
       systemvars: true
     })
+
     return config
   }
 }));

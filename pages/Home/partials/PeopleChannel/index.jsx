@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import styled from 'styled-components'
 import { MainChannelView, MainDocumentView, ChannelView } from 'Containers'
@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   padding: 2rem 0 4rem 2rem;
 `
 
-class PeopleChannel extends Component {
+class PeopleChannel extends React.Component {
   render() {
     return (
       <Wrapper>
