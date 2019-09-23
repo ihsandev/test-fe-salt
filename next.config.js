@@ -20,7 +20,7 @@ module.exports = withCSS(withImages({
     // resolve path
     config.resolve = {
       ...config.resolve,
-      extensions: [...config.resolve.extensions, ".scss", ".css", ".mdx", "js", "jsx"],
+      extensions: [...config.resolve.extensions, ".scss", ".css", ".mdx", "jsx"],
       alias: { ...config.resolve.alias, ...aliases }
     }
 
