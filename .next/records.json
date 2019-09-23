@@ -1,0 +1,54 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!node_modules/bootstrap/dist/css/bootstrap.min.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--5-1!node_modules/bootstrap/dist/css/bootstrap.min.css 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "styles": 2,
+      "static/runtime/main.js": 3,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\Home.js": 4,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\Home\\partials\\PeopleChannel.js": 5,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\Home\\partials\\VideosActivity.js": 6,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\_app.js": 7,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\_error.js": 8,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\index.js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

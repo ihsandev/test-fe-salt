@@ -1,0 +1,43 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/Home/index.jsx": 0,
+      "multi private-next-pages/Home/partials/PeopleChannel/index.jsx": 1,
+      "multi private-next-pages/Home/partials/VideosActivity/index.jsx": 2,
+      "multi private-next-pages/_app.jsx": 3,
+      "multi private-next-pages/_document.jsx": 4,
+      "multi private-next-pages/_error.jsx": 5,
+      "multi private-next-pages/index.jsx": 6
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\Home.js": 0,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\Home\\partials\\PeopleChannel.js": 1,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\Home\\partials\\VideosActivity.js": 2,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\_app.js": 3,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\_document.js": 4,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\_error.js": 5,
+      "static\\JRblyDW9abCNsgBCgm5Xy\\pages\\index.js": 6
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}

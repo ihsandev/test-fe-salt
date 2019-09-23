@@ -1,16 +1,46 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_9e2a3f9838424feeb96c.js",
-    "static/development/dll/dll_9e2a3f9838424feeb96c.js.map"
-  ],
+  "devFiles": [],
   "pages": {
+    "/": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/css/styles.ea656e46.chunk.css",
+      "static/chunks/styles.e8605892cde87b9af44c.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
+    ],
+    "/Home": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/css/styles.ea656e46.chunk.css",
+      "static/chunks/styles.e8605892cde87b9af44c.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
+    ],
+    "/Home/partials/PeopleChannel": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
+    ],
+    "/Home/partials/VideosActivity": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
+    ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/commons.dbd4b8fd5efd5bab6ca6.js",
+      "static/css/styles.ea656e46.chunk.css",
+      "static/chunks/styles.e8605892cde87b9af44c.js",
+      "static/runtime/main-5b831a90dfdaf1fe212b.js"
     ]
   }
 }
