@@ -1453,17 +1453,27 @@ class MainChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`http://api.tvmaze.com/shows/1/cast`);
+    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('https://api.tvmaze.com/search/shows?q=batman');
     urlFetch.then(res => {
       if (res.status === 200) {
         return res.json();
       }
     }).then(resJson => {
-      const datum = resJson.map(item => item.person);
+      const datum = resJson.map(item => item.show);
       this.setState({
         channel: datum
       });
-    });
+    }); // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
+    // urlFetch.then(res => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // }).then(resJson => {
+    //   const datum = resJson.map(item => item.person)
+    //   this.setState({
+    //     channel: datum
+    //   })
+    // })
   }
 
   render() {
@@ -1474,7 +1484,7 @@ class MainChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     }, __jsx(Grid, null, this.state.channel.splice(0, 5).map((item, i) => {
       return __jsx(Components__WEBPACK_IMPORTED_MODULE_3__["VideosNews"], {
         title: item.name,
-        name: item.country.name,
+        name: item.genres,
         key: i,
         classname: i === 0 ? 'item item1' : 'item',
         image: item.image.original
@@ -1749,7 +1759,6 @@ class MainVideosView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   render() {
-    console.log(this.props.shows);
     return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
       md: "8"
     }, __jsx(Flex, null, __jsx("h3", null, this.props.title), __jsx("div", null, this.props.subtitle)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {

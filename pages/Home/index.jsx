@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from 'Layouts'
 import VideosActivity from "./partials/VideosActivity"
 import PeopleChannel from "./partials/PeopleChannel"

@@ -1406,20 +1406,30 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()("http://api.tvmaze.com/shows/1/cast");
+      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()('https://api.tvmaze.com/search/shows?q=batman');
       urlFetch.then(function (res) {
         if (res.status === 200) {
           return res.json();
         }
       }).then(function (resJson) {
         var datum = resJson.map(function (item) {
-          return item.person;
+          return item.show;
         });
 
         _this2.setState({
           channel: datum
         });
-      });
+      }); // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
+      // urlFetch.then(res => {
+      //   if (res.status === 200) {
+      //     return res.json()
+      //   }
+      // }).then(resJson => {
+      //   const datum = resJson.map(item => item.person)
+      //   this.setState({
+      //     channel: datum
+      //   })
+      // })
     }
   }, {
     key: "render",
@@ -1431,7 +1441,7 @@ function (_Component) {
       }, __jsx(Grid, null, this.state.channel.splice(0, 5).map(function (item, i) {
         return __jsx(Components__WEBPACK_IMPORTED_MODULE_9__["VideosNews"], {
           title: item.name,
-          name: item.country.name,
+          name: item.genres,
           key: i,
           classname: i === 0 ? 'item item1' : 'item',
           image: item.image.original
@@ -1692,7 +1702,6 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log(this.props.shows);
       return __jsx(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
         md: "8"
       }, __jsx(Flex, null, __jsx("h3", null, this.props.title), __jsx("div", null, this.props.subtitle)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
