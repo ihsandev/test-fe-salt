@@ -99,7 +99,6 @@ class MainChannelView extends Component {
   }
 
   render() {
-    console.log(this.state.channel)
     return (
       <>
         <Row>

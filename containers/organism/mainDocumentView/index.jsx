@@ -96,7 +96,6 @@ class MainDocumentView extends Component {
     })
   }
   render() {
-    console.log(this.state.data)
     return (
       <>
         <Row>

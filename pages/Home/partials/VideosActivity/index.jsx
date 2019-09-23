@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import styled from 'styled-components'
 import { MainVideosView, ActivityView } from 'Containers'
+import fetch from 'isomorphic-unfetch'
 
 const Wrapper = styled.section`
   background:  #fff2fe; 

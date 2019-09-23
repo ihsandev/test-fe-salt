@@ -5,10 +5,10 @@ import PeopleChannel from "./partials/PeopleChannel"
 
 const Home = () => {
   return (
-    <Layout>
+    < Layout >
       <VideosActivity />
       <PeopleChannel />
-    </Layout>
+    </Layout >
   )
 }
 

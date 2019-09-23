@@ -98,7 +98,7 @@ class MainVideosView extends Component {
     })
   }
   render() {
-    console.log(this.state.data)
+    console.log(this.props.shows)
     return (
       <>
         <Row>
