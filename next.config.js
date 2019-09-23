@@ -50,5 +50,11 @@ module.exports = withCSS(withImages({
     // })
 
     return config
+  },
+  exportPathMap: defaultPathMap => {
+    return {
+      "/": { page: "/" }
+    };
   }
+
 }));
