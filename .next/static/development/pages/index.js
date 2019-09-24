@@ -1161,14 +1161,28 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()("http://api.tvmaze.com/seasons/1/episodes");
+      // const urlFetch = fetch(`http://api.tvmaze.com/seasons/1/episodes`)
+      // urlFetch.then(res => {
+      //   if (res.status === 200) {
+      //     return res.json()
+      //   }
+      // }).then(resJson => {
+      //   this.setState({
+      //     data: resJson
+      //   })
+      // })
+      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()('https://api.tvmaze.com/search/shows?q=batman');
       urlFetch.then(function (res) {
         if (res.status === 200) {
           return res.json();
         }
       }).then(function (resJson) {
+        var datum = resJson.map(function (item) {
+          return item.show;
+        });
+
         _this2.setState({
-          data: resJson
+          data: datum
         });
       });
     }
@@ -1346,7 +1360,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  background-color: #b560a4;\n  display: flex;\n  justify-content:center;\n  justify-items: center;\n  align-items: center;\n  color: #fff;\n  padding: 0 15px;\n  font-weight: bolder;\n  font-size: 1em;\n  cursor: pointer;\n  i {\n    margin-right: 1rem;\n    font-size: 2em;\n    cursor: pointer;\n  }\n  label {\n    cursor: pointer;\n  }\n  @media screen and (max-width: 600px) {\n    label {\n      font-size: 0.7em;\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  background-color: #b560a4;\n  display: flex;\n  justify-content:center;\n  justify-items: center;\n  align-items: center;\n  color: #fff;\n  padding: 0 15px;\n  font-weight: bolder;\n  font-size: 1em;\n  cursor: pointer;\n  i {\n    margin-right: 1rem;\n    font-size: 2em;\n    cursor: pointer;\n  }\n  label {\n    cursor: pointer;\n  }\n  @media screen and (max-width: 600px) {\n    label {\n      font-size: 0.6em;\n    }\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -1406,14 +1420,25 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()("http://api.tvmaze.com/shows/1/cast");
+      // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
+      // urlFetch.then(res => {
+      //   if (res.status === 200) {
+      //     return res.json()
+      //   }
+      // }).then(resJson => {
+      //   const datum = resJson.map(item => item.person)
+      //   this.setState({
+      //     channel: datum
+      //   })
+      // })
+      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()('https://api.tvmaze.com/search/shows?q=batman');
       urlFetch.then(function (res) {
         if (res.status === 200) {
           return res.json();
         }
       }).then(function (resJson) {
         var datum = resJson.map(function (item) {
-          return item.person;
+          return item.show;
         });
 
         _this2.setState({
@@ -1431,7 +1456,7 @@ function (_Component) {
       }, __jsx(Grid, null, this.state.channel.splice(0, 5).map(function (item, i) {
         return __jsx(Components__WEBPACK_IMPORTED_MODULE_9__["VideosNews"], {
           title: item.name,
-          name: item.country.name,
+          name: item.genres,
           key: i,
           classname: i === 0 ? 'item item1' : 'item',
           image: item.image.original
@@ -1540,8 +1565,19 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var urlfetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()("http://api.tvmaze.com/schedule");
-      urlfetch.then(function (res) {
+      // const urlfetch = fetch(`http://api.tvmaze.com/schedule`)
+      // urlfetch.then(res => {
+      //   if (res.status === 200) {
+      //     return res.json()
+      //   }
+      // }).then(resJson => {
+      //   const datum = resJson.map(item => item.show)
+      //   this.setState({
+      //     data: datum
+      //   })
+      // })
+      var urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()('https://api.tvmaze.com/search/shows?q=batman');
+      urlFetch.then(function (res) {
         if (res.status === 200) {
           return res.json();
         }

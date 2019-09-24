@@ -1213,14 +1213,25 @@ class ChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`http://api.tvmaze.com/seasons/1/episodes`);
+    // const urlFetch = fetch(`http://api.tvmaze.com/seasons/1/episodes`)
+    // urlFetch.then(res => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // }).then(resJson => {
+    //   this.setState({
+    //     data: resJson
+    //   })
+    // })
+    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('https://api.tvmaze.com/search/shows?q=batman');
     urlFetch.then(res => {
       if (res.status === 200) {
         return res.json();
       }
     }).then(resJson => {
+      const datum = resJson.map(item => item.show);
       this.setState({
-        data: resJson
+        data: datum
       });
     });
   }
@@ -1439,7 +1450,7 @@ const More = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
   }
   @media screen and (max-width: 600px) {
     label {
-      font-size: 0.7em;
+      font-size: 0.6em;
     }
   }
 `;
@@ -1453,13 +1464,24 @@ class MainChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`http://api.tvmaze.com/shows/1/cast`);
+    // const urlFetch = fetch(`http://api.tvmaze.com/shows/1/cast`)
+    // urlFetch.then(res => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // }).then(resJson => {
+    //   const datum = resJson.map(item => item.person)
+    //   this.setState({
+    //     channel: datum
+    //   })
+    // })
+    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('https://api.tvmaze.com/search/shows?q=batman');
     urlFetch.then(res => {
       if (res.status === 200) {
         return res.json();
       }
     }).then(resJson => {
-      const datum = resJson.map(item => item.person);
+      const datum = resJson.map(item => item.show);
       this.setState({
         channel: datum
       });
@@ -1474,7 +1496,7 @@ class MainChannelView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     }, __jsx(Grid, null, this.state.channel.splice(0, 5).map((item, i) => {
       return __jsx(Components__WEBPACK_IMPORTED_MODULE_3__["VideosNews"], {
         title: item.name,
-        name: item.country.name,
+        name: item.genres,
         key: i,
         classname: i === 0 ? 'item item1' : 'item',
         image: item.image.original
@@ -1594,8 +1616,19 @@ class MainDocumentView extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    const urlfetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`http://api.tvmaze.com/schedule`);
-    urlfetch.then(res => {
+    // const urlfetch = fetch(`http://api.tvmaze.com/schedule`)
+    // urlfetch.then(res => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // }).then(resJson => {
+    //   const datum = resJson.map(item => item.show)
+    //   this.setState({
+    //     data: datum
+    //   })
+    // })
+    const urlFetch = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('https://api.tvmaze.com/search/shows?q=batman');
+    urlFetch.then(res => {
       if (res.status === 200) {
         return res.json();
       }

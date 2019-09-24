@@ -55,14 +55,26 @@ class ChannelView extends Component {
     }
   }
   componentDidMount() {
-    const urlFetch = fetch(`http://api.tvmaze.com/seasons/1/episodes`)
+    // const urlFetch = fetch(`http://api.tvmaze.com/seasons/1/episodes`)
+    // urlFetch.then(res => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // }).then(resJson => {
+    //   this.setState({
+    //     data: resJson
+    //   })
+    // })
+    const urlFetch = fetch('https://api.tvmaze.com/search/shows?q=batman')
+
     urlFetch.then(res => {
       if (res.status === 200) {
         return res.json()
       }
     }).then(resJson => {
+      const datum = resJson.map(item => item.show)
       this.setState({
-        data: resJson
+        data: datum
       })
     })
   }

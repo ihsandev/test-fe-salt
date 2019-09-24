@@ -83,8 +83,20 @@ class MainDocumentView extends Component {
     }
   }
   componentDidMount() {
-    const urlfetch = fetch(`http://api.tvmaze.com/schedule`)
-    urlfetch.then(res => {
+    // const urlfetch = fetch(`http://api.tvmaze.com/schedule`)
+    // urlfetch.then(res => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // }).then(resJson => {
+    //   const datum = resJson.map(item => item.show)
+    //   this.setState({
+    //     data: datum
+    //   })
+    // })
+    const urlFetch = fetch('https://api.tvmaze.com/search/shows?q=batman')
+
+    urlFetch.then(res => {
       if (res.status === 200) {
         return res.json()
       }
