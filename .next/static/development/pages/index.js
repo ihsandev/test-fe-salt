@@ -1380,7 +1380,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 20vh 20vh 20vh;\n  overflow: hidden;\n  grid-gap: 1.1rem;\n  .item {\n    background-size: cover;\n    background-repeat: no-repeat;\n    h3 {\n      font-size: 0.8em;\n      padding: 0;\n    }\n    p {\n      padding: 0;\n      font-size: 0.6em;\n    }\n  }\n  .item1 {\n    grid-column: 1 / span 2;\n    grid-row: 1 / span 2;\n    h3 {\n      font-size: 1.5em;\n    }\n    p {\n      padding: 0;\n      font-size: 0.8em;\n    }\n  }\n  @media screen and (max-width: 600px) {\n    .item1 {\n        grid-column: 1 / span 3;\n      }\n      grid-template-rows: 20vh 20vh 20vh 20vh;\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 20vh 20vh 20vh;\n  overflow: hidden;\n  grid-gap: 1.1rem;\n  .item {\n    background-size: cover;\n    background-repeat: no-repeat;\n    h3 {\n      font-size: 0.8em;\n      padding: 0;\n    }\n    p {\n      padding: 0;\n      font-size: 0.6em;\n    }\n  }\n  .item1 {\n    grid-column: 1 / span 2;\n    grid-row: 1 / span 2;\n    h3 {\n      font-size: 1.5em;\n    }\n    p {\n      padding: 0;\n      font-size: 0.8em;\n    }\n  }\n  @media screen and (max-width: 600px) {\n    .item1 {\n        grid-column: 1 / span 3;\n      }\n      grid-template-rows: 15vh 15vh 15vh 15vh;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1525,7 +1525,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 20vh 20vh 20vh;\n  overflow: hidden;\n  grid-gap: 1.1rem;\n  .item {\n    background-size: cover;\n    background-repeat: no-repeat;\n    h3 {\n      font-size: 0.8em;\n      padding: 0;\n    }\n    p {\n      padding: 0;\n      font-size: 0.6em;\n    }\n  }\n  .item1 {\n    grid-column: 1 / span 2;\n    grid-row: 1 / span 2;\n    h3 {\n      font-size: 1.5em;\n    }\n    p {\n      padding: 0;\n      font-size: 0.8em;\n    }\n  }\n  @media screen and (max-width: 600px) {\n    .item1 {\n        grid-column: 1 / span 3;\n      }\n      grid-template-rows: 20vh 20vh 20vh 20vh;\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 20vh 20vh 20vh;\n  overflow: hidden;\n  grid-gap: 1.1rem;\n  .item {\n    background-size: cover;\n    background-repeat: no-repeat;\n    h3 {\n      font-size: 0.8em;\n      padding: 0;\n    }\n    p {\n      padding: 0;\n      font-size: 0.6em;\n    }\n  }\n  .item1 {\n    grid-column: 1 / span 2;\n    grid-row: 1 / span 2;\n    h3 {\n      font-size: 1.5em;\n    }\n    p {\n      padding: 0;\n      font-size: 0.8em;\n    }\n  }\n  @media screen and (max-width: 600px) {\n    .item1 {\n        grid-column: 1 / span 3;\n      }\n      grid-template-rows: 15vh 15vh 15vh 15vh;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1670,7 +1670,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 20vh 20vh 20vh;\n  overflow: hidden;\n  grid-gap: 1.1rem;\n  .item {\n    background-size: cover;\n    background-repeat: no-repeat;\n    h3 {\n      font-size: 0.8em;\n      padding: 0;\n    }\n    p {\n      padding: 0;\n      font-size: 0.6em;\n    }\n  }\n  .item1 {\n    grid-column: 1 / span 2;\n    grid-row: 1 / span 2;\n    h3 {\n      font-size: 1.5em;\n    }\n    p {\n      padding: 0;\n      font-size: 0.8em;\n    }\n  }\n  @media screen and (max-width: 600px) {\n    .item1 {\n        grid-column: 1 / span 3;\n      }\n      grid-template-rows: 20vh 20vh 20vh 20vh;\n    }\n  "]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_5__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: 20vh 20vh 20vh;\n  overflow: hidden;\n  grid-gap: 1.1rem;\n  .item {\n    background-size: cover;\n    background-repeat: no-repeat;\n    h3 {\n      font-size: 0.8em;\n      padding: 0;\n    }\n    p {\n      padding: 0;\n      font-size: 0.6em;\n    }\n  }\n  .item1 {\n    grid-column: 1 / span 2;\n    grid-row: 1 / span 2;\n    h3 {\n      font-size: 1.5em;\n    }\n    p {\n      padding: 0;\n      font-size: 0.8em;\n    }\n  }\n  @media screen and (max-width: 600px) {\n    .item1 {\n        grid-column: 1 / span 3;\n      }\n      grid-template-rows: 15vh 15vh 15vh 15vh;\n    }\n  "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1845,8 +1845,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-function _templateObject8() {
+function _templateObject9() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @media screen and (max-width: 600px) {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n  }\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: none;\n  @media screen and (max-width: 600px) {\n    display: block;\n    cursor: pointer;\n    > div {\n      width: 25px;\n      height: 3px;\n      background-color: #fff;\n      margin-bottom: 5px;\n      &:last-of-type {\n        margin-bottom: 0;\n      }\n    }    \n  }\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -1856,7 +1866,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: none;\n  @media screen and (max-width: 600px) {\n    display: block;\n    cursor: pointer;\n    > div {\n      width: 25px;\n      height: 3px;\n      background-color: #fff;\n      margin-bottom: 5px;\n      &:last-of-type {\n        margin-bottom: 0;\n      }\n    }    \n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @media screen and (max-width: 600px) {\n    width: 100%;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -1942,8 +1952,9 @@ var DetailAuthor = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div
 });
 var Avatar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
 var Action = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6());
-var Burger = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7());
-var WrapMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject8());
+var NewButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(Components__WEBPACK_IMPORTED_MODULE_4__["Button"])(_templateObject7());
+var Burger = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject8());
+var WrapMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject9());
 
 var Navbar = function Navbar(_ref3) {
   var setShowMenu = _ref3.setShowMenu;
@@ -1961,11 +1972,11 @@ var Navbar = function Navbar(_ref3) {
     }
   }, __jsx("div", null), __jsx("div", null), __jsx("div", null)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
     md: "5",
-    xs: "6"
+    xs: "4"
   }, __jsx(Components__WEBPACK_IMPORTED_MODULE_4__["Search"], null)), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
     md: "auto",
-    xs: "3"
-  }, __jsx(Components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+    xs: "4"
+  }, __jsx(NewButton, {
     block: true,
     icon: "cloud_upload"
   }, "Upload")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
@@ -30453,7 +30464,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: #fff2fe;\n  padding: 2rem 0 4rem 2rem;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: #fff2fe;\n  padding: 2rem 0 4rem 2rem;\n  @media screen and (max-width: 600px){\n    padding: 0;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

@@ -1417,7 +1417,7 @@ const Grid = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
     .item1 {
         grid-column: 1 / span 3;
       }
-      grid-template-rows: 20vh 20vh 20vh 20vh;
+      grid-template-rows: 15vh 15vh 15vh 15vh;
     }
 `;
 const Flex = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
@@ -1569,7 +1569,7 @@ const Grid = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
     .item1 {
         grid-column: 1 / span 3;
       }
-      grid-template-rows: 20vh 20vh 20vh 20vh;
+      grid-template-rows: 15vh 15vh 15vh 15vh;
     }
 `;
 const Flex = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
@@ -1721,7 +1721,7 @@ const Grid = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
     .item1 {
         grid-column: 1 / span 3;
       }
-      grid-template-rows: 20vh 20vh 20vh 20vh;
+      grid-template-rows: 15vh 15vh 15vh 15vh;
     }
   `;
 const Flex = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
@@ -1969,6 +1969,11 @@ const Action = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     }
   }
 `;
+const NewButton = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Components__WEBPACK_IMPORTED_MODULE_3__["Button"])`
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
 const Burger = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   display: none;
   @media screen and (max-width: 600px) {
@@ -2007,11 +2012,11 @@ const Navbar = ({
     onClick: () => setShowMenu(true)
   }, __jsx("div", null), __jsx("div", null), __jsx("div", null)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
     md: "5",
-    xs: "6"
+    xs: "4"
   }, __jsx(Components__WEBPACK_IMPORTED_MODULE_3__["Search"], null)), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
     md: "auto",
-    xs: "3"
-  }, __jsx(Components__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    xs: "4"
+  }, __jsx(NewButton, {
     block: true,
     icon: "cloud_upload"
   }, "Upload")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
@@ -4171,6 +4176,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.section`
   background: #fff2fe;
   padding: 2rem 0 4rem 2rem;
+  @media screen and (max-width: 600px){
+    padding: 0;
+  }
 `;
 
 const PeopleChannel = () => {

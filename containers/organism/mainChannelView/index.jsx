@@ -38,7 +38,7 @@ const Grid = styled.div`
     .item1 {
         grid-column: 1 / span 3;
       }
-      grid-template-rows: 20vh 20vh 20vh 20vh;
+      grid-template-rows: 15vh 15vh 15vh 15vh;
     }
 `
 const Flex = styled.div`

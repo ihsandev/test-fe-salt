@@ -68,6 +68,12 @@ const Action = styled.div`
   }
 `
 
+const NewButton = styled(Button)`
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+`
+
 const Burger = styled.div`
   display: none;
   @media screen and (max-width: 600px) {
@@ -107,11 +113,11 @@ const Navbar = ({ setShowMenu }) => {
             </Burger>
           </WrapMenu>
         </Col>
-        <Col md="5" xs="6">
+        <Col md="5" xs="4">
           <Search />
         </Col>
-        <Col md="auto" xs="3">
-          <Button block icon="cloud_upload">Upload</Button>
+        <Col md="auto" xs="4">
+          <NewButton block icon="cloud_upload">Upload</NewButton>
         </Col>
         <Col md={{ offset: 1 }}>
           <div style={{ position: 'relative' }}>

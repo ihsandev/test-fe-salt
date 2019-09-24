@@ -6,6 +6,9 @@ import { MainChannelView, MainDocumentView, ChannelView } from 'Containers'
 const Wrapper = styled.section`
   background: #fff2fe;
   padding: 2rem 0 4rem 2rem;
+  @media screen and (max-width: 600px){
+    padding: 0;
+  }
 `
 
 const PeopleChannel = () => {
